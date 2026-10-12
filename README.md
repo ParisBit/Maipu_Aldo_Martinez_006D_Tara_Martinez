@@ -194,10 +194,8 @@ La versión local no contempla una base de datos como requisito para su funciona
 
 | Integrante | Rol | Responsabilidades |
 |---|---|---|
-| [Nombre del integrante o integrantes] | Desarrollo de software | Implementación, mantenimiento, pruebas y documentación del proyecto. |
-| [Nombre del integrante, si corresponde] | Gestión del repositorio | Organización del código fuente, control de versiones y respaldo en GitHub. |
-
-Los nombres y roles deben completarse de acuerdo con la composición real del equipo. Si el proyecto es individual, se puede dejar un único integrante con las responsabilidades correspondientes.
+| [Paris Martínez] | Desarrollo de software | Implementación, mantenimiento, pruebas y documentación del proyecto. |
+| [Maximiliano Tara] | Gestión del Proyecto | Organización del proyecto, documentación del proyecto y respaldo en GitHub. |
 
 ## 9. Metodología de trabajo
 
@@ -213,8 +211,6 @@ Las actividades de trabajo pueden organizarse en las siguientes etapas:
 6. Actualización de la documentación y respaldo del código en GitHub.
 
 El control de versiones permite mantener un historial de los cambios y disponer de una copia remota del código fuente.
-
-**Metodología formal:** confirmar si el equipo utiliza Scrum, Kanban u otro método. El enfoque iterativo descrito no implica, por sí solo, que se esté aplicando formalmente alguna de esas metodologías.
 
 ## 10. Control de versiones y buenas prácticas
 
@@ -247,7 +243,7 @@ Estas líneas representan posibles mejoras y no funcionalidades garantizadas de 
 
 ## 12. Licencia
 
-La licencia del proyecto debe definirse y declararse explícitamente antes de distribuirlo públicamente. Hasta entonces, no se presupone que el código esté publicado bajo una licencia de código abierto.
+La licencia del proyecto hasta entonces, no se presupone que el código esté publicado bajo una licencia de código abierto.
 
 ---
 
