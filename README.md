@@ -31,7 +31,7 @@ Sus principales objetivos son:
 - Aprovechar mejor la superficie disponible.
 - Facilitar la estimación económica de los materiales.
 - Reducir el tiempo dedicado a tareas manuales de planificación.
-- Ofrecer una alternativa gratuita y accesible.
+  
 
 ## 3. Funcionalidades principales
 
@@ -185,7 +185,7 @@ Entre las posibles líneas de evolución se consideran:
 - Mejoras de experiencia de usuario.
 - Incorporación de nuevas herramientas de análisis.
 - Validación con talleres y usuarios del sector de la carpintería.
-- Evaluación de alternativas de sostenibilidad económica para mantener el acceso gratuito.
+- Evaluación de alternativas de sostenibilidad económica.
 
 ## 13. Licencia y autoría
 
