@@ -1,250 +1,197 @@
-# Maipu_Aldo_Martinez_006D_Tara_Martinez
+# TableroLab
 
-# MuebleDesigner
+**Optimización de cortes de tableros, aprovechamiento de materiales y control de costos en un solo lugar.**
 
-Aplicación de escritorio para el diseño y la composición de muebles, desarrollada con Java y JavaFX.
+TableroLab es una aplicación de escritorio desarrollada para facilitar la planificación y optimización de cortes de tableros de madera. Su propósito es ayudar a carpinteros, talleres y usuarios independientes a organizar sus proyectos, distribuir piezas sobre tableros, visualizar los resultados y estimar los costos de los materiales.
 
-## 1. Descripción del proyecto
+El proyecto busca acercar herramientas de planificación y optimización a más personas mediante una aplicación gratuita, intuitiva y de instalación sencilla.
 
-**MuebleDesigner** es una aplicación de escritorio orientada al diseño visual y la composición de muebles mediante piezas y componentes que pueden organizarse dentro de un área de trabajo.
+---
 
-El proyecto busca facilitar la creación y organización de estructuras de mobiliario, permitiendo trabajar con dimensiones, conexiones entre piezas, selección de elementos y movimiento de grupos.
+## 1. Problema que aborda
 
-Está dirigido a personas interesadas en el diseño de muebles, estudiantes y usuarios que necesiten una herramienta local para experimentar con composiciones de mobiliario.
+La planificación manual de cortes puede provocar:
 
-El objetivo es desarrollar una herramienta que permita visualizar y organizar piezas de manera intuitiva, reduciendo la dificultad de representar estructuras de muebles mediante procedimientos manuales.
+- Desperdicio innecesario de material.
+- Dificultades para distribuir las piezas sobre los tableros.
+- Pérdida de tiempo en cálculos y planificación.
+- Dificultad para estimar el costo de los materiales.
+- Poco control sobre los espacios sobrantes después del corte.
 
-> Estado del proyecto: en desarrollo. Las funcionalidades disponibles dependen de la versión actual del código fuente.
+TableroLab busca centralizar estas tareas en una sola herramienta.
 
-## 2. Tecnologías utilizadas
+## 2. Propuesta de valor
 
-| Tecnología o herramienta | Versión | Uso |
-|---|---|---|
-| Java | 21 | Lenguaje principal de programación. |
-| Eclipse Temurin JDK | 21.0.12.1 | Kit de desarrollo para compilar y ejecutar Java. |
-| JavaFX | 21.0.8 | Desarrollo de la interfaz gráfica y representación visual. |
-| Apache Maven | Por verificar | Gestión de dependencias y compilación del proyecto. |
-| IntelliJ IDEA Community Edition | 2025.2.6.3 | Entorno de desarrollo, ejecución y depuración. |
-| Git | Por verificar | Control de versiones, si está configurado en el proyecto. |
-| GitHub | Plataforma web | Alojamiento del repositorio y respaldo del código fuente. |
+TableroLab integra herramientas para planificar cortes, visualizar su distribución, calcular costos y analizar los retazos resultantes.
 
-### Base de datos y servicios externos
+Sus principales objetivos son:
 
-La versión local actual no requiere una base de datos ni servicios en la nube para su funcionamiento básico previsto.
+- Facilitar la planificación de proyectos de carpintería.
+- Optimizar la distribución de piezas sobre los tableros.
+- Aprovechar mejor la superficie disponible.
+- Facilitar la estimación económica de los materiales.
+- Reducir el tiempo dedicado a tareas manuales de planificación.
+- Ofrecer una alternativa gratuita y accesible.
 
-## 3. Requisitos previos
+## 3. Funcionalidades principales
 
-Antes de ejecutar MuebleDesigner, se necesita:
+- **Gestión de proyectos:** creación y administración de proyectos de corte.
+- **Gestión de materiales:** administración de materiales y formatos de tableros.
+- **Gestión de piezas:** ingreso y organización de las piezas requeridas.
+- **Optimización de cortes:** distribución de piezas mediante algoritmos heurísticos.
+- **Rotación de piezas:** consideración de orientaciones permitidas durante la optimización.
+- **Ancho de corte:** consideración del material perdido por el espesor de la herramienta de corte.
+- **Optimización de múltiples tableros:** distribución de piezas utilizando una cantidad configurable de tableros.
+- **Visualización gráfica:** representación de los tableros, piezas colocadas y espacios disponibles.
+- **Cálculo de retazos:** identificación geométrica de los espacios sobrantes.
+- **Cálculo de costos:** estimación del costo de los tableros utilizados.
+- **Cotizaciones:** generación y administración de cotizaciones.
+- **Exportación PDF:** generación de informes con resultados, planos, piezas, costos y retazos.
+- **Respaldo y restauración:** herramientas para proteger y recuperar la información almacenada.
+- **Interfaz gráfica:** aplicación de escritorio con tema visual configurable.
 
-- Windows, Linux o macOS compatible con Java.
-- JDK 21 instalado.
-- Apache Maven o el sistema de ejecución Maven configurado en el IDE.
-- Git, si se desea clonar el repositorio mediante la terminal.
-- Conexión a Internet para descargar el proyecto y resolver dependencias durante la configuración inicial, cuando sea necesario.
+## 4. Tecnologías utilizadas
 
-Una vez descargadas las dependencias, la aplicación no debería necesitar conexión a Internet para sus funciones locales, siempre que estas no dependan de servicios externos.
+| Tecnología | Utilización |
+|---|---|
+| Java 21 | Lenguaje de programación |
+| JavaFX | Interfaz gráfica |
+| Maven | Gestión de dependencias y construcción |
+| SQLite | Base de datos local |
+| PDFBox | Generación de documentos PDF |
+| JUnit 5 | Pruebas automatizadas |
+| jpackage | Generación de distribución e instalador de Windows |
 
-## 4. Instalación y ejecución local
+## 5. Arquitectura del proyecto
 
-### 4.1. Obtener el código fuente
+TableroLab utiliza una arquitectura organizada por responsabilidades:
+
+| Paquete | Responsabilidad |
+|---|---|
+| `app` | Inicio y configuración de la aplicación |
+| `ui` | Interfaz gráfica y componentes visuales |
+| `model` | Entidades y modelos de datos |
+| `optimizer` | Algoritmos de optimización de cortes |
+| `service` | Lógica de negocio, cálculos y generación de documentos |
+| `persistence` | Acceso a datos y operaciones con SQLite |
+| `security` | Respaldo y restauración de información |
+
+La aplicación funciona como un programa de escritorio. La interfaz se comunica con los servicios y la capa de persistencia mediante llamadas internas de Java. No requiere un servidor remoto para sus operaciones principales.
+
+## 6. Requisitos
+
+### Para utilizar el instalador
+
+- Windows compatible con el ejecutable distribuido.
+- Instalador de TableroLab.
+- No es necesario instalar Java por separado, ya que la distribución incorpora su propio entorno de ejecución.
+
+### Para ejecutar desde el código fuente
+
+- JDK 21.
+- Maven.
+- IntelliJ IDEA u otro entorno compatible con proyectos Maven.
+
+## 7. Instalación
+
+### Opción 1: Instalador de Windows
+
+1. Descargar el archivo `TableroLab-1.0.0.exe` desde la sección de versiones o distribución del proyecto.
+2. Ejecutar el instalador.
+3. Seguir las instrucciones de instalación.
+4. Abrir TableroLab desde el acceso correspondiente.
+
+La distribución de Windows incorpora el entorno de ejecución de Java necesario para iniciar la aplicación.
+
+### Opción 2: Ejecutar desde el código fuente
 
 Clonar el repositorio:
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone URL_DEL_REPOSITORIO
 ```
 
-Entrar en la carpeta del proyecto:
+Ingresar al directorio:
 
 ```bash
-cd MuebleDesigner
+cd TableroLab
 ```
 
-Si ya se dispone del código fuente, se puede abrir directamente la carpeta que contiene el archivo `pom.xml`.
-
-### 4.2. Verificar Java
-
-Abrir una terminal y ejecutar:
+Ejecutar las pruebas:
 
 ```bash
-java -version
-javac -version
+mvn test
 ```
 
-Ambos comandos deben permitir comprobar que Java está instalado y que se dispone del compilador. Se debe utilizar JDK 21 para este proyecto.
-
-### 4.3. Verificar Maven
-
-Ejecutar:
+Construir el proyecto:
 
 ```bash
-mvn -version
+mvn package
 ```
 
-Este comando permite comprobar la instalación de Maven y la versión de Java que utiliza.
+La ejecución desde el código fuente requiere un entorno Java 21 y las dependencias definidas en el proyecto Maven.
 
-Si Maven no está disponible como comando global, se puede utilizar el Maven configurado en IntelliJ IDEA o el Maven Wrapper, si está incluido en el repositorio.
+## 8. Base de datos y almacenamiento
 
-### 4.4. Abrir el proyecto en IntelliJ IDEA
+TableroLab utiliza SQLite para almacenar localmente la información.
 
-1. Abrir IntelliJ IDEA Community Edition.
-2. Seleccionar la opción para abrir un proyecto existente.
-3. Elegir la carpeta raíz de MuebleDesigner.
-4. Comprobar que IntelliJ reconoce el archivo `pom.xml`.
-5. Configurar el JDK 21 como SDK del proyecto.
-6. Esperar a que Maven descargue y sincronice las dependencias.
-7. Revisar que no existan errores de configuración.
-
-### 4.5. Compilar el proyecto
-
-Desde la terminal, ubicada en la carpeta raíz del proyecto, ejecutar:
-
-```bash
-mvn clean compile
-```
-
-Este comando limpia los archivos generados anteriormente y compila el código fuente.
-
-### 4.6. Ejecutar la aplicación
-
-Si el archivo `pom.xml` incluye la configuración del complemento de JavaFX, se puede ejecutar:
-
-```bash
-mvn javafx:run
-```
-
-Si el proyecto utiliza otra configuración de ejecución, iniciar la clase principal desde IntelliJ IDEA o seguir las instrucciones definidas en el `pom.xml`.
-
-**Nota:** el comando definitivo de ejecución debe comprobarse con la configuración real del proyecto antes de publicar estas instrucciones como verificadas.
-
-## 5. Estructura del proyecto
-
-La estructura general prevista es la siguiente. Los nombres de las carpetas y paquetes deben ajustarse a los que existan realmente en el repositorio.
+La ubicación predeterminada de la base de datos es:
 
 ```text
-MuebleDesigner/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── [paquetes de la aplicación]
-│   │   └── resources/
-│   │       └── [recursos de la interfaz]
-│   └── test/
-│       └── java/
-├── pom.xml
-├── README.md
-└── .gitignore
+%USERPROFILE%\.tablerolab\tablerolab.db
 ```
 
-- `src/main/java/`: código fuente de la aplicación.
-- `src/main/resources/`: recursos utilizados por la interfaz, si corresponde.
-- `src/test/java/`: pruebas automatizadas, si están implementadas.
-- `pom.xml`: configuración de Maven y dependencias del proyecto.
-- `README.md`: documentación principal del repositorio.
-- `.gitignore`: archivos y carpetas que no deben incorporarse al control de versiones.
+La aplicación dispone de mecanismos de respaldo y restauración para facilitar la protección de los datos del usuario.
 
-## 6. Funcionalidades del proyecto
+## 9. Pruebas de software
 
-MuebleDesigner está orientado a incorporar las siguientes capacidades:
+El proyecto incorpora pruebas automatizadas con JUnit 5.
 
-- Representación visual de piezas de mobiliario.
-- Definición y manejo de dimensiones.
-- Selección y movimiento de elementos dentro del área de trabajo.
-- Conexión y organización de piezas.
-- Movimiento conjunto de grupos de elementos.
-- Interacción con una interfaz gráfica de escritorio.
+En la última ejecución de validación se obtuvo el siguiente resultado:
 
-La disponibilidad de cada funcionalidad debe verificarse en la versión actual del código fuente. Esta lista describe el alcance funcional del proyecto y no implica que todas las características estén terminadas.
+| Indicador | Resultado |
+|---|---:|
+| Pruebas ejecutadas | 145 |
+| Fallos | 0 |
+| Errores | 0 |
+| Pruebas omitidas | 0 |
+| Resultado de construcción | BUILD SUCCESS |
 
-## 7. Arquitectura de la solución
+Las pruebas incluyen componentes relacionados con los algoritmos de optimización, distribución de múltiples tableros, cálculo de retazos y persistencia de datos.
 
-MuebleDesigner sigue un enfoque de aplicación de escritorio. Java se utiliza para implementar la lógica del programa, JavaFX para presentar la interfaz gráfica y Maven para gestionar la configuración y las dependencias.
+Estos resultados corresponden a las pruebas automatizadas existentes; no representan una medición de cobertura total del código ni sustituyen las pruebas de usabilidad y rendimiento.
 
-El diseño busca separar, en la medida en que lo permita la estructura actual del código, la representación visual de las piezas y las reglas que controlan sus dimensiones, conexiones y movimientos.
+## 10. Alcance y consideraciones
 
-### Diagrama general
+- La optimización utiliza algoritmos heurísticos y no garantiza encontrar la distribución matemáticamente óptima en todos los casos.
+- El cálculo de costos considera el precio de los tableros registrados; no representa un presupuesto integral de fabricación.
+- El cálculo de retazos identifica espacios geométricos disponibles, pero no constituye un sistema automático de inventario de sobrantes.
+- La optimización de múltiples tableros admite una configuración de hasta cinco tableros.
 
-```mermaid
-flowchart TD
-    U[Usuario] --> UI[Interfaz gráfica JavaFX]
-    UI --> L[Lógica de MuebleDesigner]
-    L --> P[Gestión de piezas y dimensiones]
-    L --> C[Conexiones entre piezas]
-    L --> G[Movimiento de grupos]
-    P --> V[Representación visual]
-    C --> V
-    G --> V
-    V --> UI
-    M[Maven] -. Gestiona dependencias .-> UI
-    J[Java 21 / JDK] -. Compila y ejecuta .-> L
-```
+## 11. Estado del proyecto
 
-El diagrama representa la organización funcional prevista y no necesariamente los paquetes o clases exactos del código actual.
+**Versión:** 1.0.0
 
-### Componentes principales
+TableroLab cuenta con una aplicación de escritorio funcional, persistencia local, herramientas de optimización, visualización gráfica, cálculo de costos, exportación PDF y mecanismos de respaldo y restauración.
 
-- **Interfaz gráfica:** permite al usuario interactuar con el área de trabajo y los controles de la aplicación.
-- **Lógica de diseño:** administra las operaciones sobre las piezas, sus dimensiones, las conexiones y los grupos.
-- **Representación visual:** muestra los elementos y actualiza su apariencia cuando cambia la composición.
-- **Gestión del proyecto:** Maven administra las dependencias y la compilación, mientras que Java proporciona el entorno de ejecución.
+El proyecto se encuentra en una etapa de consolidación y documentación, con posibilidades de evolución a partir de la retroalimentación de sus usuarios.
 
-La versión local no contempla una base de datos como requisito para su funcionamiento básico previsto.
+## 12. Mejoras futuras
 
-## 8. Integrantes y roles
+Entre las posibles líneas de evolución se consideran:
 
-| Integrante | Rol | Responsabilidades |
-|---|---|---|
-| [Paris Martínez] | Desarrollo de software | Implementación, mantenimiento, pruebas y documentación del proyecto. |
-| [Maximiliano Tara] | Gestión del Proyecto | Organización del proyecto, documentación del proyecto y respaldo en GitHub. |
+- Mejoras en los algoritmos de optimización.
+- Ampliación de las herramientas de gestión de retazos.
+- Mejoras de experiencia de usuario.
+- Incorporación de nuevas herramientas de análisis.
+- Validación con talleres y usuarios del sector de la carpintería.
+- Evaluación de alternativas de sostenibilidad económica para mantener el acceso gratuito.
 
-## 9. Metodología de trabajo
+## 13. Licencia y autoría
 
-El desarrollo se organiza mediante un enfoque iterativo e incremental, avanzando progresivamente desde la configuración del entorno hasta la implementación y validación de las funcionalidades.
+**Proyecto:** TableroLab  
+**Versión:** 1.0.0  
+**Tipo:** Aplicación de escritorio  
+**Lenguaje principal:** Java
 
-Las actividades de trabajo pueden organizarse en las siguientes etapas:
-
-1. Preparación del entorno de desarrollo y configuración del proyecto.
-2. Implementación de la interfaz gráfica y del área de trabajo.
-3. Desarrollo de la lógica para administrar piezas, dimensiones y conexiones.
-4. Incorporación de operaciones de selección, movimiento y agrupación.
-5. Pruebas, corrección de errores y mejoras de usabilidad.
-6. Actualización de la documentación y respaldo del código en GitHub.
-
-El control de versiones permite mantener un historial de los cambios y disponer de una copia remota del código fuente.
-
-## 10. Control de versiones y buenas prácticas
-
-El código fuente se mantiene en un repositorio Git alojado en GitHub.
-
-Antes de publicar cambios, se recomienda:
-
-- Verificar que el proyecto compile correctamente.
-- Revisar las modificaciones realizadas.
-- Excluir archivos temporales, directorios generados y configuraciones personales.
-- No subir contraseñas, tokens, claves privadas ni otras credenciales.
-- Mantener actualizado el archivo `README.md`.
-- Registrar los cambios mediante mensajes de confirmación descriptivos.
-
-Los archivos generados durante la compilación, como `target/`, normalmente deben excluirse del repositorio.
-
-## 11. Estado actual y trabajo futuro
-
-MuebleDesigner se encuentra en desarrollo. Las próximas mejoras dependerán de las funcionalidades pendientes y de los resultados de las pruebas.
-
-Entre las posibles líneas de evolución se encuentran:
-
-- Mejorar la precisión y facilidad de manipulación de las piezas.
-- Consolidar las reglas de conexión y movimiento conjunto.
-- Mejorar la experiencia de uso de la interfaz.
-- Ampliar las pruebas y la documentación técnica.
-- Preparar una versión ejecutable que facilite la instalación y distribución.
-
-Estas líneas representan posibles mejoras y no funcionalidades garantizadas de la versión actual.
-
-## 12. Licencia
-
-La licencia del proyecto hasta entonces, no se presupone que el código esté publicado bajo una licencia de código abierto.
-
----
-
-**MuebleDesigner** — Proyecto de desarrollo de software para el diseño y la composición visual de muebles.
+La licencia y los datos de autoría deben incorporarse de acuerdo con las condiciones de distribución definidas para el proyecto.
