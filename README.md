@@ -4,7 +4,7 @@
 
 TableroLab es una aplicación de escritorio desarrollada para facilitar la planificación y optimización de cortes de tableros de madera. Su propósito es ayudar a carpinteros, talleres y usuarios independientes a organizar sus proyectos, distribuir piezas sobre tableros, visualizar los resultados y estimar los costos de los materiales.
 
-El proyecto busca acercar herramientas de planificación y optimización a más personas mediante una aplicación gratuita, intuitiva y de instalación sencilla.
+El proyecto busca acercar herramientas de planificación y optimización a más personas mediante una aplicación intuitiva y de instalación sencilla.
 
 ---
 
@@ -194,4 +194,4 @@ Entre las posibles líneas de evolución se consideran:
 **Tipo:** Aplicación de escritorio  
 **Lenguaje principal:** Java
 
-La licencia y los datos de autoría deben incorporarse de acuerdo con las condiciones de distribución definidas para el proyecto.
+La licencia del proyecto hasta entonces, no se presupone que el código esté publicado bajo una licencia de código abierto.
