@@ -1,0 +1,385 @@
+
+/* =========================================
+   TABLEROLAB - PALETA ARENA
+   ========================================= */
+
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+    -fx-background-color: #F3EDE2;
+    -fx-text-fill: #40372D;
+}
+
+/* Paneles */
+
+.panel {
+    -fx-background-color: #FFFCF7;
+    -fx-background-radius: 10px;
+    -fx-border-color: #DED2BF;
+    -fx-border-radius: 10px;
+    -fx-padding: 15px;
+}
+
+/* Títulos */
+
+.titulo-principal {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #493B2C;
+}
+
+.titulo-seccion {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #66513B;
+}
+
+/* Botones */
+
+.button {
+    -fx-background-color: #A88760;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #806344;
+}
+
+/* Campos de entrada */
+
+.text-field,
+.combo-box {
+    -fx-background-color: #FFFCF7;
+    -fx-border-color: #D8C8B2;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 6px;
+}
+
+.text-field:focused,
+.combo-box:focused {
+    -fx-border-color: #A88760;
+}
+
+/* Etiquetas */
+
+.label {
+    -fx-text-fill: #554638;
+}
+
+/* Tarjetas de piezas */
+
+.fila-pieza {
+    -fx-background-color: #FFFCF7;
+    -fx-border-color: #DED2BF;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px;
+}
+
+/* Resumen de optimización */
+
+.resumen-panel {
+    -fx-background-color: #EDE2D1;
+    -fx-background-radius: 8px;
+    -fx-border-color: #D8C8B2;
+    -fx-border-radius: 8px;
+    -fx-padding: 10px;
+}
+
+/* Detalle de piezas pendientes */
+
+.detalle-pendientes {
+    -fx-background-color: #F5EFE5;
+    -fx-border-color: #DED2BF;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px;
+}
+
+/* =========================================
+   TEMA OSCURO
+   ========================================= */
+
+.tema-oscuro {
+    -fx-background-color: #25221F;
+}
+
+.tema-oscuro .panel {
+    -fx-background-color: #35302A;
+    -fx-border-color: #55483A;
+}
+
+.tema-oscuro .label {
+    -fx-text-fill: #F0E7DA;
+}
+
+.tema-oscuro .titulo-principal {
+    -fx-text-fill: #E8D1B2;
+}
+
+.tema-oscuro .titulo-seccion {
+    -fx-text-fill: #D9BE9B;
+}
+
+.tema-oscuro .button {
+    -fx-background-color: #806344;
+    -fx-text-fill: #FFFFFF;
+}
+
+.tema-oscuro .button:hover {
+    -fx-background-color: #A88760;
+}
+
+.tema-oscuro .text-field,
+.tema-oscuro .combo-box {
+    -fx-background-color: #453D34;
+    -fx-text-fill: #F0E7DA;
+    -fx-border-color: #806344;
+}
+
+.tema-oscuro .fila-pieza {
+    -fx-background-color: #453D34;
+    -fx-border-color: #66513B;
+}
+
+.tema-oscuro .resumen-panel {
+    -fx-background-color: #40372D;
+    -fx-border-color: #66513B;
+}
+
+.tema-oscuro .detalle-pendientes {
+    -fx-background-color: #453D34;
+    -fx-border-color: #66513B;
+}
+
+/* Lista de piezas pendientes - Tema arena */
+
+.lista-piezas-pendientes {
+    -fx-background-color: #FFFCF7;
+    -fx-border-color: #DED2BF;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* Lista de piezas pendientes - Tema oscuro */
+
+.tema-oscuro .lista-piezas-pendientes {
+    -fx-background-color: #453D34;
+    -fx-border-color: #66513B;
+}
+
+/* Lista de piezas - Tema arena */
+
+.lista-piezas {
+    -fx-background-color: #FFFCF7;
+    -fx-background-radius: 6px;
+}
+
+/* Lista de piezas - Tema oscuro */
+
+.tema-oscuro .lista-piezas {
+    -fx-background-color: #453D34;
+}
+
+/* Barras de desplazamiento - Tema arena */
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Barras de desplazamiento - Tema oscuro */
+
+.tema-oscuro .scroll-pane {
+    -fx-background-color: #35302A;
+    -fx-background: #35302A;
+}
+
+.tema-oscuro .scroll-pane > .viewport {
+    -fx-background-color: #35302A;
+}
+
+/* =========================================
+   COMBOBOX - TEMA OSCURO
+   ========================================= */
+
+/* Fondo y texto del selector */
+
+.tema-oscuro .combo-box {
+    -fx-background-color: #453D34;
+}
+
+.tema-oscuro .combo-box .list-cell {
+    -fx-background-color: #453D34;
+    -fx-text-fill: #F0E7DA;
+}
+
+/* Lista desplegable */
+
+.tema-oscuro .combo-box-popup .list-view {
+    -fx-background-color: #35302A;
+    -fx-border-color: #806344;
+}
+
+.tema-oscuro .combo-box-popup .list-cell {
+    -fx-background-color: #35302A;
+    -fx-text-fill: #F0E7DA;
+}
+
+/* Opción seleccionada o bajo el cursor */
+
+.tema-oscuro .combo-box-popup .list-cell:filled:selected,
+.tema-oscuro .combo-box-popup .list-cell:filled:hover {
+    -fx-background-color: #806344;
+    -fx-text-fill: #FFFFFF;
+}
+
+
+/* =========================================
+   SPLITPANE - TEMA OSCURO
+   ========================================= */
+
+.tema-oscuro .split-pane {
+    -fx-background-color: #25221F;
+    -fx-background-insets: 0;
+}
+
+/* Divisores arrastrables */
+
+.tema-oscuro .split-pane > .split-pane-divider {
+    -fx-background-color: #55483A;
+    -fx-padding: 0 3px 0 3px;
+}
+
+.tema-oscuro .split-pane > .split-pane-divider:hover {
+    -fx-background-color: #806344;
+}
+
+/* Paneles y áreas de trabajo */
+
+.tema-oscuro .split-pane > .split-pane-item {
+    -fx-background-color: #35302A;
+}
+
+/* ScrollPane */
+
+.tema-oscuro .scroll-pane,
+.tema-oscuro .scroll-pane > .viewport {
+    -fx-background-color: #35302A;
+}
+
+/* Barras de desplazamiento */
+
+.tema-oscuro .scroll-bar {
+    -fx-background-color: #35302A;
+}
+
+.tema-oscuro .scroll-bar .thumb {
+    -fx-background-color: #806344;
+    -fx-background-radius: 5px;
+}
+
+.tema-oscuro .scroll-bar .thumb:hover {
+    -fx-background-color: #A88760;
+}
+
+.tema-oscuro .scroll-bar .track {
+    -fx-background-color: #25221F;
+}
+
+
+/* =================================
+   PESTAÑAS - TEMA ARENA
+   ================================= */
+
+.tab-pane {
+    -fx-background-color: #FFFCF7;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: #EDE2D1;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: #EDE2D1;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #E8D8BD;
+    -fx-background-radius: 6px 6px 0 0;
+    -fx-border-color: #DED2BF;
+    -fx-padding: 8px 16px;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #66513B;
+    -fx-font-weight: bold;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #FFFCF7;
+    -fx-border-color: #DED2BF;
+    -fx-border-width: 1px 1px 0 1px;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #493B2C;
+}
+
+.tab-pane .tab:hover {
+    -fx-background-color: #D8C8B2;
+}
+
+.tab-pane .tab-content-area {
+    -fx-background-color: #FFFCF7;
+    -fx-border-color: #DED2BF;
+}
+
+/* =================================
+   PESTAÑAS - TEMA OSCURO
+   ================================= */
+
+.tema-oscuro .tab-pane {
+    -fx-background-color: #35302A;
+}
+
+.tema-oscuro .tab-pane .tab-header-area,
+.tema-oscuro .tab-pane .tab-header-background {
+    -fx-background-color: #25221F;
+}
+
+.tema-oscuro .tab-pane .tab {
+    -fx-background-color: #453D34;
+    -fx-border-color: #55483A;
+}
+
+.tema-oscuro .tab-pane .tab .tab-label {
+    -fx-text-fill: #D9BE9B;
+}
+
+.tema-oscuro .tab-pane .tab:selected {
+    -fx-background-color: #35302A;
+    -fx-border-color: #806344;
+}
+
+.tema-oscuro .tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #F0E7DA;
+}
+
+.tema-oscuro .tab-pane .tab:hover {
+    -fx-background-color: #66513B;
+}
+
+.tema-oscuro .tab-pane .tab-content-area {
+    -fx-background-color: #35302A;
+    -fx-border-color: #55483A;
+}
