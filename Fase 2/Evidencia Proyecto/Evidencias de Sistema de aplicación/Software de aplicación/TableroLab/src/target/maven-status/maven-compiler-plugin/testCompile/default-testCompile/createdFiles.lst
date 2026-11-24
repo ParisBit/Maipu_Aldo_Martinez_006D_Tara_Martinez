@@ -1,0 +1,13 @@
+cl\tablerolab\persistence\ConexionSQLiteTest.class
+cl\tablerolab\persistence\MaterialDAOTest.class
+cl\tablerolab\optimizer\OptimizadorMultiplesTablerosTest.class
+cl\tablerolab\persistence\PrecioTableroDAOTest.class
+cl\tablerolab\persistence\FormatoTableroDAOTest.class
+cl\tablerolab\optimizer\OptimizadorCortesMaxRectsTest.class
+cl\tablerolab\persistence\ProveedorDAOTest.class
+cl\tablerolab\persistence\RetazoDAOTest.class
+cl\tablerolab\persistence\CotizacionDAOTest.class
+cl\tablerolab\persistence\ProyectoDAOTest.class
+cl\tablerolab\optimizer\OptimizadorCortesSimpleTest.class
+cl\tablerolab\persistence\PiezaDAOTest.class
+cl\tablerolab\service\CalculadorRetazosTest.class

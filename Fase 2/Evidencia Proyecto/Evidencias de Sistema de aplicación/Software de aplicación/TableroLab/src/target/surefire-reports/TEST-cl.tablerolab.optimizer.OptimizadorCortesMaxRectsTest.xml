@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.878" tests="52" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Azul\IdeaProjects\TableroLab\target\test-classes;C:\Users\Azul\IdeaProjects\TableroLab\target\classes;C:\Users\Azul\.m2\repository\org\openjfx\javafx-controls\21.0.8\javafx-controls-21.0.8.jar;C:\Users\Azul\.m2\repository\org\openjfx\javafx-controls\21.0.8\javafx-controls-21.0.8-win.jar;C:\Users\Azul\.m2\repository\org\openjfx\javafx-graphics\21.0.8\javafx-graphics-21.0.8.jar;C:\Users\Azul\.m2\repository\org\openjfx\javafx-graphics\21.0.8\javafx-graphics-21.0.8-win.jar;C:\Users\Azul\.m2\repository\org\openjfx\javafx-base\21.0.8\javafx-base-21.0.8.jar;C:\Users\Azul\.m2\repository\org\openjfx\javafx-base\21.0.8\javafx-base-21.0.8-win.jar;C:\Users\Azul\.m2\repository\org\junit\jupiter\junit-jupiter\5.11.4\junit-jupiter-5.11.4.jar;C:\Users\Azul\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.4\junit-jupiter-api-5.11.4.jar;C:\Users\Azul\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Azul\.m2\repository\org\junit\platform\junit-platform-commons\1.11.4\junit-platform-commons-1.11.4.jar;C:\Users\Azul\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Azul\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.4\junit-jupiter-params-5.11.4.jar;C:\Users\Azul\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.4\junit-jupiter-engine-5.11.4.jar;C:\Users\Azul\.m2\repository\org\junit\platform\junit-platform-engine\1.11.4\junit-platform-engine-1.11.4.jar;C:\Users\Azul\.m2\repository\org\apache\pdfbox\pdfbox\3.0.5\pdfbox-3.0.5.jar;C:\Users\Azul\.m2\repository\org\apache\pdfbox\pdfbox-io\3.0.5\pdfbox-io-3.0.5.jar;C:\Users\Azul\.m2\repository\org\apache\pdfbox\fontbox\3.0.5\fontbox-3.0.5.jar;C:\Users\Azul\.m2\repository\commons-logging\commons-logging\1.3.5\commons-logging-1.3.5.jar;C:\Users\Azul\.m2\repository\org\xerial\sqlite-jdbc\3.50.3.0\sqlite-jdbc-3.50.3.0.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Santiago"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="user.country" value="CL"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Users\Azul\.jdks\temurin-21.0.12.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\Azul\AppData\Local\Temp\surefire16666694244351582839\surefirebooter-20261116200811179_3.jar C:\Users\Azul\AppData\Local\Temp\surefire16666694244351582839 2026-11-16T20-08-10_733-jvmRun1 surefire-20261116200811179_1tmp surefire_0-20261116200811179_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Azul\IdeaProjects\TableroLab\target\test-classes;C:\Users\Azul\IdeaProjects\TableroLab\target\classes;C:\Users\Azul\.m2\repository\org\openjfx\javafx-controls\21.0.8\javafx-controls-21.0.8.jar;C:\Users\Azul\.m2\repository\org\openjfx\javafx-controls\21.0.8\javafx-controls-21.0.8-win.jar;C:\Users\Azul\.m2\repository\org\openjfx\javafx-graphics\21.0.8\javafx-graphics-21.0.8.jar;C:\Users\Azul\.m2\repository\org\openjfx\javafx-graphics\21.0.8\javafx-graphics-21.0.8-win.jar;C:\Users\Azul\.m2\repository\org\openjfx\javafx-base\21.0.8\javafx-base-21.0.8.jar;C:\Users\Azul\.m2\repository\org\openjfx\javafx-base\21.0.8\javafx-base-21.0.8-win.jar;C:\Users\Azul\.m2\repository\org\junit\jupiter\junit-jupiter\5.11.4\junit-jupiter-5.11.4.jar;C:\Users\Azul\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.4\junit-jupiter-api-5.11.4.jar;C:\Users\Azul\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Azul\.m2\repository\org\junit\platform\junit-platform-commons\1.11.4\junit-platform-commons-1.11.4.jar;C:\Users\Azul\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Azul\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.4\junit-jupiter-params-5.11.4.jar;C:\Users\Azul\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.4\junit-jupiter-engine-5.11.4.jar;C:\Users\Azul\.m2\repository\org\junit\platform\junit-platform-engine\1.11.4\junit-platform-engine-1.11.4.jar;C:\Users\Azul\.m2\repository\org\apache\pdfbox\pdfbox\3.0.5\pdfbox-3.0.5.jar;C:\Users\Azul\.m2\repository\org\apache\pdfbox\pdfbox-io\3.0.5\pdfbox-io-3.0.5.jar;C:\Users\Azul\.m2\repository\org\apache\pdfbox\fontbox\3.0.5\fontbox-3.0.5.jar;C:\Users\Azul\.m2\repository\commons-logging\commons-logging\1.3.5\commons-logging-1.3.5.jar;C:\Users\Azul\.m2\repository\org\xerial\sqlite-jdbc\3.50.3.0\sqlite-jdbc-3.50.3.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Azul"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-08-18"/>
+    <property name="java.home" value="C:\Users\Azul\.jdks\temurin-21.0.12.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Azul\IdeaProjects\TableroLab"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Azul\AppData\Local\Temp\surefire16666694244351582839\surefirebooter-20261116200811179_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.12.1+1-LTS"/>
+    <property name="user.name" value="Azul"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.12.1+1"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.6.3\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="localRepository" value="C:\Users\Azul\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\Azul\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2025.2.6.3"/>
+    <property name="java.version" value="21.0.12.1"/>
+    <property name="user.dir" value="C:\Users\Azul\IdeaProjects\TableroLab"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\Azul\.jdks\temurin-21.0.12.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\Azul\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.6.3\bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.12.1+1-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.repo.local" value="C:\Users\Azul\.m2\repository"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="debeIgnorarPiezaConLargoCero" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.098">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.3 | Ancho: 100.0 | Largo: 79.7
+X: 20.3 | Y: 0.0 | Ancho: 79.7 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeColocarVariasPiezasRepetidas" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.008">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 20.3 | Y: 0.0 | Ancho: 49.7 | Largo: 20.0
+Espacios libres después de colocar una pieza:
+X: 40.599999999999994 | Y: 0.0 | Ancho: 29.400000000000002 | Largo: 20.0
+Espacios libres después de colocar una pieza:
+X: 60.89999999999999 | Y: 0.0 | Ancho: 9.100000000000005 | Largo: 20.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeRechazarEspesorInfinito" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.005"/>
+  <testcase name="debeProcesarMezclaDePiezasGrandesYPequenas" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.005">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 60.3 | Ancho: 100.0 | Largo: 39.7
+X: 60.3 | Y: 0.0 | Ancho: 39.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 80.6 | Ancho: 100.0 | Largo: 19.400000000000002
+X: 20.3 | Y: 60.3 | Ancho: 79.7 | Largo: 39.7
+X: 60.3 | Y: 0.0 | Ancho: 39.7 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeRespetarLimitesDelTableroConKerf" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.01">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 25.3 | Ancho: 50.0 | Largo: 14.7
+X: 20.3 | Y: 0.0 | Ancho: 29.7 | Largo: 40.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 25.3 | Ancho: 50.0 | Largo: 14.7
+X: 20.3 | Y: 20.3 | Ancho: 29.7 | Largo: 19.7
+X: 45.599999999999994 | Y: 0.0 | Ancho: 4.400000000000003 | Largo: 40.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeIgnorarPiezaConLargoNaN" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.007">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.3 | Ancho: 100.0 | Largo: 79.7
+X: 20.3 | Y: 0.0 | Ancho: 79.7 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeTrabajarConTableroEstrecho" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.012">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.3 | Ancho: 10.0 | Largo: 79.7
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 40.599999999999994 | Ancho: 10.0 | Largo: 59.400000000000006
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 60.89999999999999 | Ancho: 10.0 | Largo: 39.10000000000001
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 81.19999999999999 | Ancho: 10.0 | Largo: 18.800000000000008
+]]></system-out>
+  </testcase>
+  <testcase name="debeIgnorarPiezaConAnchoNegativo" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.008">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.3 | Ancho: 100.0 | Largo: 79.7
+X: 20.3 | Y: 0.0 | Ancho: 79.7 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeIgnorarPiezaConCantidadNegativa" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.007">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.3 | Ancho: 100.0 | Largo: 79.7
+X: 20.3 | Y: 0.0 | Ancho: 79.7 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="noDebeExistirSuperposicionEntreLasPiezas" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.015">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.3 | Ancho: 100.0 | Largo: 79.7
+X: 30.3 | Y: 0.0 | Ancho: 69.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.3 | Ancho: 100.0 | Largo: 79.7
+X: 60.599999999999994 | Y: 0.0 | Ancho: 39.400000000000006 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.3 | Ancho: 100.0 | Largo: 79.7
+X: 90.89999999999999 | Y: 0.0 | Ancho: 9.100000000000005 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 50.599999999999994 | Ancho: 100.0 | Largo: 49.400000000000006
+X: 20.3 | Y: 20.3 | Ancho: 79.7 | Largo: 79.7
+X: 90.89999999999999 | Y: 0.0 | Ancho: 9.100000000000005 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 80.89999999999999 | Ancho: 100.0 | Largo: 19.100000000000005
+X: 20.3 | Y: 20.3 | Ancho: 79.7 | Largo: 79.7
+X: 90.89999999999999 | Y: 0.0 | Ancho: 9.100000000000005 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 80.89999999999999 | Ancho: 100.0 | Largo: 19.100000000000005
+X: 20.3 | Y: 40.599999999999994 | Ancho: 79.7 | Largo: 59.400000000000006
+X: 50.599999999999994 | Y: 20.3 | Ancho: 49.400000000000006 | Largo: 79.7
+X: 90.89999999999999 | Y: 0.0 | Ancho: 9.100000000000005 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 80.89999999999999 | Ancho: 100.0 | Largo: 19.100000000000005
+X: 20.3 | Y: 40.599999999999994 | Ancho: 79.7 | Largo: 59.400000000000006
+X: 80.89999999999999 | Y: 20.3 | Ancho: 19.100000000000005 | Largo: 79.7
+X: 90.89999999999999 | Y: 0.0 | Ancho: 9.100000000000005 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 80.89999999999999 | Ancho: 100.0 | Largo: 19.100000000000005
+X: 20.3 | Y: 70.89999999999999 | Ancho: 79.7 | Largo: 29.100000000000005
+X: 40.599999999999994 | Y: 40.599999999999994 | Ancho: 59.400000000000006 | Largo: 59.400000000000006
+X: 80.89999999999999 | Y: 20.3 | Ancho: 19.100000000000005 | Largo: 79.7
+X: 90.89999999999999 | Y: 0.0 | Ancho: 9.100000000000005 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeIgnorarPiezaConAnchoNaN" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.006">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.3 | Ancho: 100.0 | Largo: 79.7
+X: 20.3 | Y: 0.0 | Ancho: 79.7 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeIgnorarPiezaConCantidadCero" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.007">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.3 | Ancho: 100.0 | Largo: 79.7
+X: 20.3 | Y: 0.0 | Ancho: 79.7 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeRechazarEspesorNegativo" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.011"/>
+  <testcase name="debeRetornarListaVaciaSiElAnchoDelTableroEsInfinito" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.005"/>
+  <testcase name="debeRespetarAnchoDeCorteDeUnMilimetro" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.006">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 40.1 | Ancho: 100.0 | Largo: 59.9
+X: 40.1 | Y: 0.0 | Ancho: 59.9 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 80.19999999999999 | Ancho: 100.0 | Largo: 19.800000000000004
+X: 40.1 | Y: 0.0 | Ancho: 59.9 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="noDebeColocarPiezasCuandoTodasSonDemasiadoGrandes" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.004"/>
+  <testcase name="debeIgnorarPiezaConAnchoNegativoInfinito" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.007">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.3 | Ancho: 100.0 | Largo: 79.7
+X: 20.3 | Y: 0.0 | Ancho: 79.7 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeProcesarCorrectamenteLaCantidadSolicitada" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.018">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 10.3 | Ancho: 100.0 | Largo: 89.7
+X: 10.3 | Y: 0.0 | Ancho: 89.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.6 | Ancho: 100.0 | Largo: 79.4
+X: 10.3 | Y: 0.0 | Ancho: 89.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 30.900000000000002 | Ancho: 100.0 | Largo: 69.10000000000001
+X: 10.3 | Y: 0.0 | Ancho: 89.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 41.2 | Ancho: 100.0 | Largo: 58.80000000000001
+X: 10.3 | Y: 30.900000000000002 | Ancho: 89.7 | Largo: 69.10000000000001
+X: 10.3 | Y: 0.0 | Ancho: 89.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 51.5 | Ancho: 100.0 | Largo: 48.500000000000014
+X: 10.3 | Y: 30.900000000000002 | Ancho: 89.7 | Largo: 69.10000000000001
+X: 10.3 | Y: 0.0 | Ancho: 89.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 61.8 | Ancho: 100.0 | Largo: 38.20000000000002
+X: 10.3 | Y: 30.900000000000002 | Ancho: 89.7 | Largo: 69.10000000000001
+X: 10.3 | Y: 0.0 | Ancho: 89.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 72.1 | Ancho: 100.0 | Largo: 27.900000000000016
+X: 10.3 | Y: 30.900000000000002 | Ancho: 89.7 | Largo: 69.10000000000001
+X: 10.3 | Y: 0.0 | Ancho: 89.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 82.39999999999999 | Ancho: 100.0 | Largo: 17.60000000000002
+X: 10.3 | Y: 30.900000000000002 | Ancho: 89.7 | Largo: 69.10000000000001
+X: 10.3 | Y: 0.0 | Ancho: 89.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 92.69999999999999 | Ancho: 100.0 | Largo: 7.300000000000023
+X: 10.3 | Y: 30.900000000000002 | Ancho: 89.7 | Largo: 69.10000000000001
+X: 10.3 | Y: 0.0 | Ancho: 89.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 92.69999999999999 | Ancho: 100.0 | Largo: 7.300000000000023
+X: 10.3 | Y: 41.2 | Ancho: 89.7 | Largo: 58.80000000000001
+X: 20.6 | Y: 30.900000000000002 | Ancho: 79.4 | Largo: 69.10000000000001
+X: 10.3 | Y: 0.0 | Ancho: 89.7 | Largo: 30.6
+X: 20.6 | Y: 0.0 | Ancho: 79.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 92.69999999999999 | Ancho: 100.0 | Largo: 7.300000000000023
+X: 10.3 | Y: 41.2 | Ancho: 89.7 | Largo: 58.80000000000001
+X: 20.6 | Y: 30.900000000000002 | Ancho: 79.4 | Largo: 69.10000000000001
+X: 10.3 | Y: 10.3 | Ancho: 89.7 | Largo: 20.3
+X: 20.6 | Y: 0.0 | Ancho: 79.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 92.69999999999999 | Ancho: 100.0 | Largo: 7.300000000000023
+X: 10.3 | Y: 41.2 | Ancho: 89.7 | Largo: 58.80000000000001
+X: 20.6 | Y: 30.900000000000002 | Ancho: 79.4 | Largo: 69.10000000000001
+X: 10.3 | Y: 20.6 | Ancho: 89.7 | Largo: 10.0
+X: 20.6 | Y: 0.0 | Ancho: 79.4 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeRetornarListaVaciaSiElAnchoDelTableroEsNaN" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.004"/>
+  <testcase name="debeIgnorarPiezaConLargoNegativoInfinito" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.008">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.3 | Ancho: 100.0 | Largo: 79.7
+X: 20.3 | Y: 0.0 | Ancho: 79.7 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeColocarUnaPiezaEnElTablero" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.005">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 40.3 | Ancho: 100.0 | Largo: 59.7
+X: 40.3 | Y: 0.0 | Ancho: 59.7 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeColocarPiezasCuadradas" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.006">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.0 | Ancho: 40.0 | Largo: 20.0
+X: 20.0 | Y: 0.0 | Ancho: 20.0 | Largo: 40.0
+Espacios libres después de colocar una pieza:
+X: 20.0 | Y: 0.0 | Ancho: 20.0 | Largo: 40.0
+Espacios libres después de colocar una pieza:
+X: 20.0 | Y: 20.0 | Ancho: 20.0 | Largo: 20.0
+Espacios libres después de colocar una pieza:
+]]></system-out>
+  </testcase>
+  <testcase name="debeIgnorarPiezasQueNoCabenEnElTablero" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.012">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 40.3 | Ancho: 100.0 | Largo: 59.7
+X: 40.3 | Y: 0.0 | Ancho: 59.7 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeRechazarEspesorNaN" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.008"/>
+  <testcase name="debeRetornarListaVaciaSiElLargoDelTableroNoEsValido" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.014"/>
+  <testcase name="debeColocarPiezasCuandoElEspacioEsExactoConKerf" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.007">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 10.3 | Y: 0.0 | Ancho: 10.0 | Largo: 10.0
+Espacios libres después de colocar una pieza:
+]]></system-out>
+  </testcase>
+  <testcase name="debeRespetarAnchoDeCorteEntreDosPiezas" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.006">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 40.3 | Ancho: 100.0 | Largo: 59.7
+X: 40.3 | Y: 0.0 | Ancho: 59.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 80.6 | Ancho: 100.0 | Largo: 19.400000000000002
+X: 40.3 | Y: 0.0 | Ancho: 59.7 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeIgnorarPiezaConLargoInfinito" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.006">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.3 | Ancho: 100.0 | Largo: 79.7
+X: 20.3 | Y: 0.0 | Ancho: 79.7 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeRespetarKerfConPiezasRotadas" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.014">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 30.3 | Y: 0.0 | Ancho: 29.7 | Largo: 20.0
+Espacios libres después de colocar una pieza:
+X: 50.599999999999994 | Y: 0.0 | Ancho: 9.400000000000002 | Largo: 20.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeColocarPiezasDeDimensionesMuyDiferentes" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.016">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 10.3 | Ancho: 100.0 | Largo: 89.7
+X: 80.3 | Y: 0.0 | Ancho: 19.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 80.3 | Ancho: 100.0 | Largo: 19.7
+X: 0.0 | Y: 10.3 | Ancho: 80.0 | Largo: 89.7
+X: 90.6 | Y: 0.0 | Ancho: 9.400000000000002 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeRetornarListaVaciaSiElAnchoDeCorteEsInfinito" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.006"/>
+  <testcase name="debeRechazarEspesorCero" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.004"/>
+  <testcase name="debeRespetarAnchoDeCorteConPiezasDeDistintasDimensiones" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.004">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 30.3 | Ancho: 100.0 | Largo: 69.7
+X: 60.3 | Y: 0.0 | Ancho: 39.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 50.3 | Ancho: 100.0 | Largo: 49.7
+X: 0.0 | Y: 30.3 | Ancho: 60.0 | Largo: 69.7
+X: 90.6 | Y: 0.0 | Ancho: 9.400000000000002 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeRetornarListaVaciaSiElAnchoDelTableroNoEsValido" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.003"/>
+  <testcase name="debeIgnorarPiezaConLargoNegativo" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.007">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.3 | Ancho: 100.0 | Largo: 79.7
+X: 20.3 | Y: 0.0 | Ancho: 79.7 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeRetornarListaVaciaSiElAnchoDeCorteEsNaN" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.003"/>
+  <testcase name="debeIgnorarPiezaConAnchoCero" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.005">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.3 | Ancho: 100.0 | Largo: 79.7
+X: 20.3 | Y: 0.0 | Ancho: 79.7 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeRetornarListaVaciaSiNoHayPiezas" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.01"/>
+  <testcase name="debeColocarMuchasPiezasPequenas" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.075">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 5.3 | Ancho: 100.0 | Largo: 94.7
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 10.600000000000001 | Ancho: 100.0 | Largo: 89.4
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 15.900000000000002 | Ancho: 100.0 | Largo: 84.10000000000001
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 21.200000000000003 | Ancho: 100.0 | Largo: 78.80000000000001
+X: 5.3 | Y: 15.900000000000002 | Ancho: 94.7 | Largo: 84.10000000000001
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 26.500000000000004 | Ancho: 100.0 | Largo: 73.50000000000001
+X: 5.3 | Y: 15.900000000000002 | Ancho: 94.7 | Largo: 84.10000000000001
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 31.800000000000004 | Ancho: 100.0 | Largo: 68.20000000000002
+X: 5.3 | Y: 15.900000000000002 | Ancho: 94.7 | Largo: 84.10000000000001
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 37.1 | Ancho: 100.0 | Largo: 62.90000000000003
+X: 5.3 | Y: 31.800000000000004 | Ancho: 94.7 | Largo: 68.20000000000002
+X: 5.3 | Y: 15.900000000000002 | Ancho: 94.7 | Largo: 84.10000000000001
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 42.4 | Ancho: 100.0 | Largo: 57.60000000000003
+X: 5.3 | Y: 31.800000000000004 | Ancho: 94.7 | Largo: 68.20000000000002
+X: 5.3 | Y: 15.900000000000002 | Ancho: 94.7 | Largo: 84.10000000000001
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 47.699999999999996 | Ancho: 100.0 | Largo: 52.30000000000003
+X: 5.3 | Y: 31.800000000000004 | Ancho: 94.7 | Largo: 68.20000000000002
+X: 5.3 | Y: 15.900000000000002 | Ancho: 94.7 | Largo: 84.10000000000001
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 52.99999999999999 | Ancho: 100.0 | Largo: 47.000000000000036
+X: 5.3 | Y: 31.800000000000004 | Ancho: 94.7 | Largo: 68.20000000000002
+X: 5.3 | Y: 15.900000000000002 | Ancho: 94.7 | Largo: 84.10000000000001
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 58.29999999999999 | Ancho: 100.0 | Largo: 41.70000000000004
+X: 5.3 | Y: 31.800000000000004 | Ancho: 94.7 | Largo: 68.20000000000002
+X: 5.3 | Y: 15.900000000000002 | Ancho: 94.7 | Largo: 84.10000000000001
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 63.59999999999999 | Ancho: 100.0 | Largo: 36.40000000000004
+X: 5.3 | Y: 31.800000000000004 | Ancho: 94.7 | Largo: 68.20000000000002
+X: 5.3 | Y: 15.900000000000002 | Ancho: 94.7 | Largo: 84.10000000000001
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 68.89999999999999 | Ancho: 100.0 | Largo: 31.100000000000033
+X: 5.3 | Y: 31.800000000000004 | Ancho: 94.7 | Largo: 68.20000000000002
+X: 5.3 | Y: 15.900000000000002 | Ancho: 94.7 | Largo: 84.10000000000001
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 74.19999999999999 | Ancho: 100.0 | Largo: 25.800000000000036
+X: 5.3 | Y: 31.800000000000004 | Ancho: 94.7 | Largo: 68.20000000000002
+X: 5.3 | Y: 15.900000000000002 | Ancho: 94.7 | Largo: 84.10000000000001
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 79.49999999999999 | Ancho: 100.0 | Largo: 20.50000000000004
+X: 5.3 | Y: 31.800000000000004 | Ancho: 94.7 | Largo: 68.20000000000002
+X: 5.3 | Y: 15.900000000000002 | Ancho: 94.7 | Largo: 84.10000000000001
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 84.79999999999998 | Ancho: 100.0 | Largo: 15.200000000000042
+X: 5.3 | Y: 31.800000000000004 | Ancho: 94.7 | Largo: 68.20000000000002
+X: 5.3 | Y: 15.900000000000002 | Ancho: 94.7 | Largo: 84.10000000000001
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 90.09999999999998 | Ancho: 100.0 | Largo: 9.900000000000045
+X: 5.3 | Y: 31.800000000000004 | Ancho: 94.7 | Largo: 68.20000000000002
+X: 5.3 | Y: 15.900000000000002 | Ancho: 94.7 | Largo: 84.10000000000001
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 31.800000000000004 | Ancho: 94.7 | Largo: 68.20000000000002
+X: 5.3 | Y: 15.900000000000002 | Ancho: 94.7 | Largo: 84.10000000000001
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 37.1 | Ancho: 94.7 | Largo: 62.90000000000003
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 5.3 | Y: 0.0 | Ancho: 94.7 | Largo: 31.500000000000004
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 37.1 | Ancho: 94.7 | Largo: 62.90000000000003
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 5.3 | Y: 5.3 | Ancho: 94.7 | Largo: 26.200000000000003
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 37.1 | Ancho: 94.7 | Largo: 62.90000000000003
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 5.3 | Y: 10.600000000000001 | Ancho: 94.7 | Largo: 20.900000000000002
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 37.1 | Ancho: 94.7 | Largo: 62.90000000000003
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 5.3 | Y: 15.900000000000002 | Ancho: 94.7 | Largo: 15.600000000000001
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 37.1 | Ancho: 94.7 | Largo: 62.90000000000003
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 5.3 | Y: 21.200000000000003 | Ancho: 94.7 | Largo: 10.3
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 37.1 | Ancho: 94.7 | Largo: 62.90000000000003
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 5.3 | Y: 26.500000000000004 | Ancho: 94.7 | Largo: 5.000000000000001
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 37.1 | Ancho: 94.7 | Largo: 62.90000000000003
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 42.4 | Ancho: 94.7 | Largo: 57.60000000000003
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 47.699999999999996 | Ancho: 94.7 | Largo: 52.30000000000003
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 52.99999999999999 | Ancho: 94.7 | Largo: 47.000000000000036
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 58.29999999999999 | Ancho: 94.7 | Largo: 41.70000000000004
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 63.59999999999999 | Ancho: 94.7 | Largo: 36.40000000000004
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 68.89999999999999 | Ancho: 94.7 | Largo: 31.100000000000033
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 74.19999999999999 | Ancho: 94.7 | Largo: 25.800000000000036
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 79.49999999999999 | Ancho: 94.7 | Largo: 20.50000000000004
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 84.79999999999998 | Ancho: 94.7 | Largo: 15.200000000000042
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 5.3 | Y: 90.09999999999998 | Ancho: 94.7 | Largo: 9.900000000000045
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 10.600000000000001 | Y: 31.800000000000004 | Ancho: 89.4 | Largo: 68.20000000000002
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 84.10000000000001
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 10.600000000000001 | Y: 37.1 | Ancho: 89.4 | Largo: 62.90000000000003
+X: 15.900000000000002 | Y: 31.800000000000004 | Ancho: 84.10000000000001 | Largo: 68.20000000000002
+X: 15.900000000000002 | Y: 15.900000000000002 | Ancho: 84.10000000000001 | Largo: 84.10000000000001
+X: 10.600000000000001 | Y: 0.0 | Ancho: 89.4 | Largo: 31.500000000000004
+X: 15.900000000000002 | Y: 0.0 | Ancho: 84.10000000000001 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 10.600000000000001 | Y: 37.1 | Ancho: 89.4 | Largo: 62.90000000000003
+X: 15.900000000000002 | Y: 31.800000000000004 | Ancho: 84.10000000000001 | Largo: 68.20000000000002
+X: 15.900000000000002 | Y: 15.900000000000002 | Ancho: 84.10000000000001 | Largo: 84.10000000000001
+X: 10.600000000000001 | Y: 5.3 | Ancho: 89.4 | Largo: 26.200000000000003
+X: 15.900000000000002 | Y: 0.0 | Ancho: 84.10000000000001 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 10.600000000000001 | Y: 37.1 | Ancho: 89.4 | Largo: 62.90000000000003
+X: 15.900000000000002 | Y: 31.800000000000004 | Ancho: 84.10000000000001 | Largo: 68.20000000000002
+X: 15.900000000000002 | Y: 15.900000000000002 | Ancho: 84.10000000000001 | Largo: 84.10000000000001
+X: 10.600000000000001 | Y: 10.600000000000001 | Ancho: 89.4 | Largo: 20.900000000000002
+X: 15.900000000000002 | Y: 0.0 | Ancho: 84.10000000000001 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 95.39999999999998 | Ancho: 100.0 | Largo: 4.6000000000000485
+X: 10.600000000000001 | Y: 37.1 | Ancho: 89.4 | Largo: 62.90000000000003
+X: 15.900000000000002 | Y: 31.800000000000004 | Ancho: 84.10000000000001 | Largo: 68.20000000000002
+X: 15.900000000000002 | Y: 15.900000000000002 | Ancho: 84.10000000000001 | Largo: 84.10000000000001
+X: 10.600000000000001 | Y: 15.900000000000002 | Ancho: 89.4 | Largo: 15.600000000000001
+X: 15.900000000000002 | Y: 0.0 | Ancho: 84.10000000000001 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeRotarUnaPiezaCuandoSeaNecesario" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.027">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+]]></system-out>
+  </testcase>
+  <testcase name="debeColocarUnaPiezaQueOcupaTodoElTablero" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.011">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+]]></system-out>
+  </testcase>
+  <testcase name="debeColocarTodasLasPiezasAunqueExistanPiezasInvalidas" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.004">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 30.3 | Ancho: 100.0 | Largo: 69.7
+X: 30.3 | Y: 0.0 | Ancho: 69.7 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 50.599999999999994 | Ancho: 100.0 | Largo: 49.400000000000006
+X: 20.3 | Y: 30.3 | Ancho: 79.7 | Largo: 69.7
+X: 30.3 | Y: 0.0 | Ancho: 69.7 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeColocarTodasLasUnidadesSolicitadasCuandoHayEspacio" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.005">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 40.3 | Ancho: 200.0 | Largo: 159.7
+X: 40.3 | Y: 0.0 | Ancho: 159.7 | Largo: 200.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 80.6 | Ancho: 200.0 | Largo: 119.4
+X: 40.3 | Y: 0.0 | Ancho: 159.7 | Largo: 200.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 110.89999999999999 | Ancho: 200.0 | Largo: 89.10000000000001
+X: 30.3 | Y: 80.6 | Ancho: 169.7 | Largo: 119.4
+X: 40.3 | Y: 0.0 | Ancho: 159.7 | Largo: 200.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 141.2 | Ancho: 200.0 | Largo: 58.800000000000026
+X: 30.3 | Y: 80.6 | Ancho: 169.7 | Largo: 119.4
+X: 40.3 | Y: 0.0 | Ancho: 159.7 | Largo: 200.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 171.5 | Ancho: 200.0 | Largo: 28.50000000000001
+X: 30.3 | Y: 80.6 | Ancho: 169.7 | Largo: 119.4
+X: 40.3 | Y: 0.0 | Ancho: 159.7 | Largo: 200.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeTrabajarConTableroAlargado" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.005">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 20.3 | Y: 0.0 | Ancho: 79.7 | Largo: 10.0
+Espacios libres después de colocar una pieza:
+X: 40.599999999999994 | Y: 0.0 | Ancho: 59.400000000000006 | Largo: 10.0
+Espacios libres después de colocar una pieza:
+X: 60.89999999999999 | Y: 0.0 | Ancho: 39.10000000000001 | Largo: 10.0
+Espacios libres después de colocar una pieza:
+X: 81.19999999999999 | Y: 0.0 | Ancho: 18.800000000000008 | Largo: 10.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeRetornarListaVaciaSiTableroEsNulo" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.008"/>
+  <testcase name="debeRetornarListaVaciaSiElAnchoDeCorteEsNegativo" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.004"/>
+  <testcase name="debeRetornarListaVaciaSiElLargoDelTableroEsInfinito" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.002"/>
+  <testcase name="debeRespetarAnchoDeCorteDeCincoMilimetros" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.002">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 40.5 | Ancho: 100.0 | Largo: 59.5
+X: 40.5 | Y: 0.0 | Ancho: 59.5 | Largo: 100.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 81.0 | Ancho: 100.0 | Largo: 19.0
+X: 40.5 | Y: 0.0 | Ancho: 59.5 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeRespetarKerfDeDiezMilimetros" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.003">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 11.0 | Y: 0.0 | Ancho: 10.0 | Largo: 10.0
+Espacios libres después de colocar una pieza:
+]]></system-out>
+  </testcase>
+  <testcase name="debeRespetarKerfDeVeinteMilimetros" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.005">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 12.0 | Y: 0.0 | Ancho: 10.0 | Largo: 10.0
+Espacios libres después de colocar una pieza:
+]]></system-out>
+  </testcase>
+  <testcase name="debeIgnorarPiezaConAnchoInfinito" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.005">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 20.3 | Ancho: 100.0 | Largo: 79.7
+X: 20.3 | Y: 0.0 | Ancho: 79.7 | Largo: 100.0
+]]></system-out>
+  </testcase>
+  <testcase name="debeConservarLaCantidadSolicitadaDeCadaTipoDePieza" classname="cl.tablerolab.optimizer.OptimizadorCortesMaxRectsTest" time="0.023">
+    <system-out><![CDATA[Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 30.3 | Ancho: 200.0 | Largo: 169.7
+X: 50.3 | Y: 0.0 | Ancho: 149.7 | Largo: 200.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 30.3 | Ancho: 200.0 | Largo: 169.7
+X: 100.6 | Y: 0.0 | Ancho: 99.4 | Largo: 200.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 30.3 | Ancho: 200.0 | Largo: 169.7
+X: 100.6 | Y: 20.3 | Ancho: 99.4 | Largo: 179.7
+X: 140.9 | Y: 0.0 | Ancho: 59.10000000000001 | Largo: 200.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 30.3 | Ancho: 200.0 | Largo: 169.7
+X: 100.6 | Y: 20.3 | Ancho: 99.4 | Largo: 179.7
+X: 181.20000000000002 | Y: 0.0 | Ancho: 18.799999999999994 | Largo: 200.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 40.599999999999994 | Ancho: 200.0 | Largo: 159.39999999999998
+X: 0.0 | Y: 30.3 | Ancho: 100.3 | Largo: 169.7
+X: 140.9 | Y: 20.3 | Ancho: 59.10000000000001 | Largo: 179.7
+X: 181.20000000000002 | Y: 0.0 | Ancho: 18.799999999999994 | Largo: 200.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 40.599999999999994 | Ancho: 200.0 | Largo: 159.39999999999998
+X: 0.0 | Y: 30.3 | Ancho: 100.3 | Largo: 169.7
+X: 171.20000000000002 | Y: 20.3 | Ancho: 28.799999999999994 | Largo: 179.7
+X: 181.20000000000002 | Y: 0.0 | Ancho: 18.799999999999994 | Largo: 200.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 50.599999999999994 | Ancho: 200.0 | Largo: 149.39999999999998
+X: 0.0 | Y: 40.599999999999994 | Ancho: 170.9 | Largo: 159.39999999999998
+X: 0.0 | Y: 30.3 | Ancho: 100.3 | Largo: 169.7
+X: 181.20000000000002 | Y: 0.0 | Ancho: 18.799999999999994 | Largo: 20.0
+X: 191.50000000000003 | Y: 0.0 | Ancho: 8.499999999999982 | Largo: 200.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 50.599999999999994 | Ancho: 200.0 | Largo: 149.39999999999998
+X: 30.3 | Y: 40.599999999999994 | Ancho: 140.6 | Largo: 159.39999999999998
+X: 30.3 | Y: 30.3 | Ancho: 70.0 | Largo: 169.7
+X: 181.20000000000002 | Y: 0.0 | Ancho: 18.799999999999994 | Largo: 20.0
+X: 191.50000000000003 | Y: 0.0 | Ancho: 8.499999999999982 | Largo: 200.0
+Espacios libres después de colocar una pieza:
+X: 0.0 | Y: 50.599999999999994 | Ancho: 200.0 | Largo: 149.39999999999998
+X: 60.599999999999994 | Y: 40.599999999999994 | Ancho: 110.30000000000001 | Largo: 159.39999999999998
+X: 60.599999999999994 | Y: 30.3 | Ancho: 39.7 | Largo: 169.7
+X: 181.20000000000002 | Y: 0.0 | Ancho: 18.799999999999994 | Largo: 20.0
+X: 191.50000000000003 | Y: 0.0 | Ancho: 8.499999999999982 | Largo: 200.0
+]]></system-out>
+  </testcase>
+</testsuite>
